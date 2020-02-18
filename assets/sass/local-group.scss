@@ -1,58 +1,42 @@
-﻿.u-lHeader {
-    background-image: url(../images/headers/Main-Building-summer-MFi.jpg);
+﻿.u-folderBenefits .u-lHeader{
+	background-image:url(../images/headers/Vassar_HolidayParty_20181212_KR_9836.jpg)
 }
-.u-folderProfessional-development .u-lHeader {
-    background-image: url(../images/headers/0010-19-03-kr-epi-fitzgerald-vassar-8198.jpg);
+.u-folderContact .u-lHeader{
+	background-image:url(../images/headers/Baldwin-Hall-fall-1010-TT-8613.jpg)
 }
-.u-folderBenefits .u-lHeader {
-    background-image: url(../images/headers/Vassar_HolidayParty_20181212_KR_9836.jpg);
+.u-folderEmployment .u-lHeader{
+	background-image:url(../images/headers/Vassar_HolidayParty_20181212_KR_9907.jpg)
 }
-.u-folderPolicies .u-lHeader {
-    background-image: url(../images/headers/0010-19-03-kr-epi-fitzgerald-vassar-8290.jpg);
+.u-folderPolicies .u-lHeader{
+	background-image:url(../images/headers/0010-19-03-kr-epi-fitzgerald-vassar-8290.jpg)
 }
-.u-folderEmployment .u-lHeader {
-    background-image: url(../images/headers/Vassar_HolidayParty_20181212_KR_9907.jpg);
+.u-folderProfessional-development .u-lHeader{
+	background-image:url(../images/headers/0010-19-03-kr-epi-fitzgerald-vassar-8198.jpg)
 }
-.u-folderContact .u-lHeader {
-    background-image: url(../images/headers/Baldwin-Hall-fall-1010-TT-8613.jpg);
+.u-lHeader{
+	background-image:url(../images/headers/Main-Building-summer-MFi.jpg)
 }
-.u-ArticleListItem__title {
-    color: #861f41
+.RowContainer.homepageStoriesEventsNews {
+    padding-top: 0;
 }
-.u-ArticleListItem__title:visited {
-    color: #666
-}
-.u-ArticleListItem__title:hover {
-    color: #ED6707
-}
-.u-ArticleListItem__title:active {
-    color: #cc0000
-}
-/* central? */
-/* .modulesArea__row--onecol .Module--mainContent {
-    margin-left: auto;
-    margin-right: auto;
-    width: 53.6rem;
-} */
 .homepageStoriesEventsNews {
-    .Module--mainContent {
+    .Row {
         border-top: solid 1px #dfdcda;
-        margin: 3% auto;
         padding: 3% 0;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
         .Module__listItem {
             margin: 0 0 2%;
             padding: 0 0 2%;
             border-bottom: dashed 1px #dfdcda;
+            list-style: none;
         }
     }
-    .Module--fullWidth {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
     .Module--stories {
-        width: 38%;
         padding: 3%;
+        margin: 3% auto;
+        width: 50%;
         background-color: #f8f7f6;
         border: 1px solid #dfdcda;
         .u-Figure,
@@ -62,9 +46,6 @@
         }
     }
     .Module--events-news {
-        width: 56%;
-        border-left: 1px solid #dfdcda;
-        padding-left: 5%;
         .dates b {
             font-style: italic !important
         }
@@ -94,5 +75,24 @@
     }
     a:link {
         border-bottom: none;
+    }
+}
+@media screen and (min-width: 35em) {
+    .homepageStoriesEventsNews {
+        .Row {
+            display: flex;
+            flex-flow: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .Module--stories {
+            width: 38%;
+            margin: 0;
+        }
+        .Module--events-news {
+            width: 56%;
+            border-left: 1px solid #dfdcda;
+            padding-left: 5%;
+        }
     }
 }
